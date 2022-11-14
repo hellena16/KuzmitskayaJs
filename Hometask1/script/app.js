@@ -13,11 +13,11 @@ alert(firstNumber + secondNumber);
 //Задача №3
 const userName = prompt("what is your name?", "");
 const userAge = prompt("What is your age", "");
-if (userAge > 18) {
+if (userAge >= 18) {
   alert("hello");
 } else userAge < 18;
 {
-  alert("Goodbye" + " " + userName);
+  alert `Goodbye ${userName}`;
 }
 
 //Задача №4
@@ -49,6 +49,19 @@ if (ok) {
 }
 
 //Задача №5
-const a = prompt("maybe 5", 5);
-const b = prompt("maybe 2", 2);
-console.log(+a + +b);
+const firstN = prompt("введите первое число", '');
+const secondN = prompt("введите второе число", '');
+const result = prompt("выберите одно из следующих действий: plus, div, minus, mult", '');
+if( result === "div"){
+console.log(+firstN / +secondN)
+}
+if( result === "plus"){
+  console.log(+firstN + +secondN)
+}
+if(result === "minus"){
+  console.log(+firstN - +secondN)
+}
+if(result === "mult"){
+  console.log(+firstN * +secondN)
+}
+
